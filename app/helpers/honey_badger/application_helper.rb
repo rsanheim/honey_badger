@@ -1,12 +1,13 @@
 module HoneyBadger
   module ApplicationHelper
     def honey_badger
-      content_tag :span, :class => "honey-badger #{Rails.env}" do
+      content_tag :div, :id => "corner-banner", :class => "corner-banner honey-badger #{Rails.env}" do
         out = ""
-        out << "this is from honey badger"
         out << Rails.env
+        out << "<br />"
+        out << "Honey Badger Don't Care<br />"
 
-        out
+        out.html_safe
       end
     end
   end
