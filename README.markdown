@@ -13,14 +13,16 @@ In your stylesheet (using Rails 3.1 sprockets awesomeness):
     /*
      *= require honey_badger
      */
+     
+Make sure to put the `honey_badger` *above* your own SCSS requires, or else the honey badger might get *nasty.* It'll just *take what it wants.*
 
 # Customization
 
-You can customize colors and add custom environment names by importing `honey_badger` into your SCSS file. Let's say you like the color orange:
+You can customize colors and add custom environment names by importing `honey_badger` into your SCSS file. Let's say you like the color orange and your `Rails.env = 'eats-larva'`:
 
     @import 'honey_badger';
 
-    .development {
+    .honey-badger.eats-larva {
       @include corner-banner(#f90);
     }
 
