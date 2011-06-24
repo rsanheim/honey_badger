@@ -3,10 +3,8 @@ require 'test_helper'
 class NavigationTest < ActionDispatch::IntegrationTest
 
   test "the truth" do
-    get "/home"
-    get "/honey_badger"
-
-    assert true
+    get "/"
+    assert_response :success
   end
 end
 
