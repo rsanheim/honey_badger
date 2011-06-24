@@ -7,6 +7,12 @@ Get a nice, clean badge displaying your Rails Environment or other helpful info.
 In your application view somewhere, just render the honey_badger helper:
 
     = honey_badger
+    
+In your stylesheet (using Rails 3.1 sprockets awesomeness):
+
+    /*
+     *= require honey_badger
+     */
 
 # Authors
 
