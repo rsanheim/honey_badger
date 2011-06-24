@@ -1,0 +1,2 @@
+module DefaultHelper
+end
