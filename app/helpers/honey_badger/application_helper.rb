@@ -1,8 +1,9 @@
 module HoneyBadger
   module ApplicationHelper
-    def honey_badger
+    def honey_badger(text=Rails.env)
       content_tag :div, :class => "corner-banner honey-badger #{Rails.env}" do
-        Rails.env.html_safe
+        text = text.join('<br/>') if text.instance_of?(Array)
+        text.html_safe
       end
     end
   end
