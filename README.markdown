@@ -14,6 +14,16 @@ In your stylesheet (using Rails 3.1 sprockets awesomeness):
      *= require honey_badger
      */
 
+# Customization
+
+You can customize colors and add custom environment names by importing `honey_badger` into your SCSS file. Let's say you like the color orange:
+
+    @import 'honey_badger';
+
+    .development {
+      @include corner-banner(#f90);
+    }
+
 # Authors
 
 * Rob Sanheim
