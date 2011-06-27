@@ -2,7 +2,7 @@ require 'test_helper'
 
 class NavigationTest < ActionDispatch::IntegrationTest
 
-  test "the truth" do
+  test "root path is successful" do
     get "/"
     assert_response :success
   end
