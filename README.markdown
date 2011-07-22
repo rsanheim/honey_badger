@@ -10,15 +10,15 @@ Add to your Gemfile:
 
 In your application view somewhere, just render the honey_badger helper:
 
-    = honey_badger
+    <%= honey_badger %>
     
 If you want to display something other than the current environment name, just pass it in:
 
-    = honey_badger "Don't Care!"
+    <%= honey_badger "Don't Care" %>
     
 Or pass in an array to display more than one interesting fact in your badge (each will be displayed on its own line):
 
-    = honey_badger ["eats larva", "skin is loose"]
+    <%= honey_badger ["eats larva", "skin is loose"] %>
     
 In your stylesheet (using Rails 3.1 sprockets awesomeness):
 
