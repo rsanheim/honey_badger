@@ -6,7 +6,7 @@ Get a nice, clean badge displaying your Rails Environment or other helpful info.
 
 Add to your Gemfile:
 
-  gem "honey_badger", :group => [:development, :test, :staging]
+    gem "honey_badger", :group => [:development, :test, :staging]
 
 In your application view somewhere, just render the honey_badger helper:
 
