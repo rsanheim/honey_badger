@@ -8,7 +8,7 @@ Add to your Gemfile:
 
     gem "honey_badger", :group => [:development, :test, :staging]
 
-In your application view somewhere, just render the honey_badger helper:
+In your application layout somewhere, probably just below your body tag, render the honey_badger helper:
 
     <%= honey_badger %>
     
@@ -20,7 +20,7 @@ Or pass in an array to display more than one interesting fact in your badge (eac
 
     <%= honey_badger ["eats larva", "skin is loose"] %>
     
-In your stylesheet (using Rails 3.1 sprockets awesomeness):
+Add the require for the css in your application.css (using Rails 3.1 sprockets awesomeness):
 
     /*
      *= require honey_badger
