@@ -2,6 +2,8 @@
 
 Get a nice, clean badge displaying your Rails Environment or other helpful info.  Want to display last deploy date?  Or maybe the status of some app wide settings?  Throw it in HoneyBadger!  He just doesn't care!
 
+![HoneyBadger Demo](https://img.skitch.com/20110723-h8iabtcdpb4i64xkgbrwy5kjs.jpg "HoneyBadger Demo")
+
 # Usage (requires Rails 3.1)
 
 Add to your Gemfile:
