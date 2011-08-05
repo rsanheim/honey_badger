@@ -8,11 +8,11 @@ Get a nice, clean badge displaying your Rails Environment or other helpful info.
 
 Add to your Gemfile:
 
-    gem "honey_badger", :group => [:development, :test, :staging]
+    gem "honey_badger"
 
 In your application layout somewhere, probably just below your body tag, render the honey_badger helper:
 
-    <%= honey_badger %>
+    <%= honey_badger unless Rails.env.production? %>
     
 If you want to display something other than the current environment name, just pass it in:
 
