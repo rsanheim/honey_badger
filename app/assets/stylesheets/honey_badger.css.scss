@@ -1,39 +1,43 @@
 @mixin corner-banner($color: #333) {
-  &.corner-banner.honey-badger { 
-      position: absolute; 
-      left: -55px; 
-      top: 30px; 
-      display: block; 
-      width: 200px; 
-      background: $color; 
-      background: -moz-linear-gradient(top, $color 0%, darken($color, 20) 100%); 
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color), color-stop(100%, darken($color, 20))); 
-      text-align:center; 
-      font-size:11px; 
-      line-height:13px; 
-      padding:4px 3px 4px 3px; 
-      text-shadow: darken($color, 20) 1px 1px 0; 
-      -webkit-transform: rotate(-45deg); 
-      -moz-transform: rotate(-45deg); 
-      transform: rotate(-45deg); 
-      box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px; 
-      -moz-box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px; 
-      -webkit-box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px; 
+  &.corner-banner.honey-badger {
+      position: absolute;
+      left: -52px;
+      top: 30px;
+      display: block;
+      width: 200px;
+      background: $color;
+      background: -moz-linear-gradient(top, $color 0%, darken($color, 20) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color), color-stop(100%, darken($color, 20)));
+      text-align:center;
+      font-size:11px;
+      line-height:13px;
+      padding:4px 3px 4px 3px;
+      text-shadow: darken($color, 20) 1px 1px 0;
+      -webkit-transform: rotate(-45deg);  /* Saf3.1+, Chrome */
+      -moz-transform: rotate(-45deg);  /* FF3.5+ */
+      -ms-transform: rotate(-45deg);  /* IE9 */
+      -o-transform: rotate(-45deg);  /* Opera 10.5 */
+      transform: rotate(-45deg);
+      filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+              M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+      box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px;
+      -moz-box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px;
+      -webkit-box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px;
       z-index: 1000;
-      letter-spacing:1px; 
-      font-style:normal; 
-      font-size:8px !important; 
-      color:#fff; 
-      text-transform:uppercase; 
-      line-height:12px; 
-      display:block; 
+      letter-spacing:1px;
+      font-style:normal;
+      font-size:8px !important;
+      color:#fff;
+      text-transform:uppercase;
+      line-height:12px;
+      display:block;
       font-family: Arial;
-      
+
       a:link,
       a:visited  {color:#FFF0B7;text-decoration: none;}
       a:hover,
-      a:focus  {color:#FFF;text-decoration: none;} 
-  } 
+      a:focus  {color:#FFF;text-decoration: none;}
+  }
 }
 
 .development { @include corner-banner(#933720) }
