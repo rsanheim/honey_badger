@@ -47,5 +47,4 @@ To see what else you can customize, take a look at `honey_badger.css.scss`.
 * Rob Sanheim
 * Jamie Kite
 
-
 This project rocks and uses MIT-LICENSE.
