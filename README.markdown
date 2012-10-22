@@ -32,12 +32,12 @@ Make sure to put the `honey_badger` *above* your own SCSS requires, or else the 
 
 # Customization
 
-You can customize colors and add custom environment names by importing `honey_badger` into your SCSS file. Let's say you like the color orange and your `Rails.env` is `staging`:
+You can customize colors and add custom environment names by importing `honey_badger` into your SCSS file. Let's say you like the color green and your `Rails.env` is `demo`:
 
     @import 'honey_badger';
 
-    .honey-badger.staging {
-      @include corner-banner(#f90);
+    .honey-badger.demo {
+      @include corner-banner(#336600);
     }
 
 To see what else you can customize, take a look at `honey_badger.css.scss`.
