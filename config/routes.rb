@@ -1,3 +1,3 @@
 HoneyBadger::Engine.routes.draw do
-  match "/" => "application#index"
+  get "/" => "application#index"
 end
